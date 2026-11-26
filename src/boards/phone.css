@@ -1,0 +1,18 @@
+/* shared device frame (iPhone-style, 390×844 screen) — scale with --s */
+.phone{position:absolute;--s:1;width:calc(416px*var(--s));height:calc(870px*var(--s));border-radius:calc(66px*var(--s));padding:calc(13px*var(--s));
+  background:linear-gradient(150deg,#4A4350 0%,#1B171E 22%,#120F14 60%,#2B2530 100%);
+  box-shadow:0 0 0 calc(1.2px*var(--s)) #9A8F9C inset,0 0 0 calc(3px*var(--s)) #2A242D inset,
+    0 calc(70px*var(--s)) calc(110px*var(--s)) calc(-40px*var(--s)) rgba(42,23,48,.55),0 calc(26px*var(--s)) calc(50px*var(--s)) calc(-24px*var(--s)) rgba(42,23,48,.45)}
+.phone::before,.phone::after{content:"";position:absolute;background:#1E1A21;border-radius:3px}
+.phone::before{left:calc(-3px*var(--s));top:calc(190px*var(--s));width:calc(4px*var(--s));height:calc(64px*var(--s));box-shadow:0 calc(84px*var(--s)) 0 #1E1A21}
+.phone::after{right:calc(-3px*var(--s));top:calc(240px*var(--s));width:calc(4px*var(--s));height:calc(104px*var(--s))}
+.scr{position:relative;width:calc(390px*var(--s));height:calc(844px*var(--s));border-radius:calc(53px*var(--s));overflow:hidden;background:#F7F1EA}
+.sb{height:calc(47px*var(--s));background:#23122A;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:calc(4px*var(--s)) calc(30px*var(--s)) 0 calc(42px*var(--s));
+  font:600 calc(16.5px*var(--s))/1 -apple-system,"SF Pro Text","Helvetica Neue",sans-serif;letter-spacing:-.01em}
+.sb .r{display:flex;gap:calc(6px*var(--s));align-items:center}
+.sb svg{display:block}
+.island{position:absolute;top:calc(11px*var(--s));left:50%;width:calc(124px*var(--s));height:calc(36px*var(--s));border-radius:calc(20px*var(--s));background:#050406;transform:translateX(-50%);z-index:5}
+.scr img.shot{display:block;width:calc(390px*var(--s));height:calc(797px*var(--s))}
+.homebar{position:absolute;bottom:calc(8px*var(--s));left:50%;width:calc(136px*var(--s));height:calc(5px*var(--s));border-radius:9px;background:rgba(30,18,34,.78);transform:translateX(-50%);z-index:5}
+.homebar.light{background:rgba(255,255,255,.85)}
+.glare{position:absolute;inset:0;border-radius:inherit;background:linear-gradient(115deg,rgba(255,255,255,.10) 0%,rgba(255,255,255,0) 32%);pointer-events:none;z-index:6}

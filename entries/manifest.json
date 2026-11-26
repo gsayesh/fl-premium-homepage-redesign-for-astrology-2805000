@@ -1,0 +1,16 @@
+{
+ "entries": [
+  {
+   "html": "entry-1.html",
+   "width": 1600,
+   "height": 1200,
+   "scale": 2,
+   "detail": "entry-1-detail.html",
+   "detail_width": 1600,
+   "detail_height": 3890,
+   "title": "Dawn Ink: Astromia mobile homepage + order flow",
+   "description": "Dawn Ink re-skin of astromia.eu: every section, the order, the live Bulgarian copy and the 4-step form, free preview and order flow are kept, but the navy-and-gold template look becomes warm paper, plum ink, rosé and one clay colour for every CTA, set in Playfair + Sofia Sans (free Google Fonts with native Bulgarian letterforms). The navy-gold book is now the only dark object on the page, so the eye goes book, name field, button, and step 1 stays above the fold. On award you get the HTML/CSS source, Figma-ready SVG assets (chart wheel, cover, icons, ornaments), PNG/JPG in every size, the font list and a short style guide. Unlimited revisions: any change (colour, font, layout, text) delivered within a few hours - rate or comment and I will revise.\n{{LIVE_URL}}\n{{REPO_URL}}",
+   "pdf": false
+  }
+ ]
+}

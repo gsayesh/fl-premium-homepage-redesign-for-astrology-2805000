@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Astromia — desktop</title>
+[[fonts]]
+<style>[[css]]
+body{width:1440px;background:var(--paper)}
+.dk{position:relative;width:1440px;height:900px;overflow:hidden;background:var(--paper);background-image:var(--grain)}
+.dk .ticker{justify-content:center}
+.dk .ticker-track{transform:none;gap:22px}
+.dk-hdr{position:relative;z-index:4;height:78px;display:flex;align-items:center;justify-content:space-between;padding:0 120px}
+.dk-hdr .logo{font-size:31px}
+.dk-nav{display:flex;gap:30px;font-size:15px;font-weight:600;color:var(--ink)}
+.dk-nav a{position:relative}
+.dk-right{display:flex;align-items:center;gap:14px}
+.dk-right .btn{height:46px;font-size:15px;padding:0 22px;width:auto}
+.dk-hero{position:absolute;left:0;right:0;top:32px;bottom:0;background:
+   radial-gradient(60% 70% at 80% 30%,rgba(230,220,234,.95) 0%,rgba(230,220,234,0) 65%),
+   radial-gradient(50% 60% at 10% 90%,rgba(239,213,203,.75) 0%,rgba(239,213,203,0) 70%),
+   linear-gradient(180deg,#EEE5EE 0%,#F4E8E4 45%,var(--paper) 90%)}
+.dk-stars{position:absolute;inset:0}
+.dk-left{position:absolute;left:120px;top:140px;width:560px;z-index:3}
+.dk-left .rating{padding-top:0}
+.dk-h1{margin-top:22px;font-family:var(--serif);font-weight:320;font-size:84px;line-height:.98;letter-spacing:-.025em;font-variation-settings:"opsz" 400;color:var(--ink)}
+.dk-h1 em{font-style:italic;color:var(--clay)}
+.dk-h1 small{display:block;font-size:40px;letter-spacing:-.015em;margin-top:10px;font-variation-settings:"opsz" 160}
+.dk-left .free-pill{margin-top:22px}
+.dk-p{margin-top:18px;font-size:17px;line-height:1.6;color:var(--ink-2);max-width:520px}
+.dk-card{margin-top:22px;width:560px;background:var(--white);border-radius:26px;padding:22px 24px 18px;border:1px solid rgba(216,195,182,.7);box-shadow:0 2px 6px rgba(42,23,48,.04),0 40px 70px -40px rgba(42,23,48,.5)}
+.dk-row{display:grid;grid-template-columns:1fr 250px;gap:10px;margin-top:14px}
+.dk-row .field{margin:0}
+.dk-row .btn{height:58px;font-size:16px}
+.dk-meta{display:flex;align-items:center;justify-content:space-between;margin-top:14px}
+.dk-meta .assure,.dk-meta .crowd{margin:0}
+.dk-visual{position:absolute;left:690px;top:70px;width:700px;height:800px;z-index:2}
+.dk-wheel{position:absolute;width:640px;height:640px;left:40px;top:60px;opacity:.95}
+.dk-wheel svg{width:100%;height:100%}
+.dk-book{position:absolute;left:250px;top:168px;perspective:1600px}
+.dk-book .book{transform:rotateY(-30deg) rotateX(5deg) rotateZ(-2deg)}
+.dk-book .b-shadow{left:0;right:-30%;bottom:-30px;height:50px;filter:blur(12px)}
+.dk-note{position:absolute;left:10px;top:500px;z-index:3;transform:rotate(-3deg)}
+.dk-note .qcard{width:300px}
+</style>
+</head>
+<body>
+<div class="dk">
+  <div class="ticker"><div class="ticker-track">
+    <span>Доставка от 2 до 4 работни дни</span>[[sp:9]]<span>Безплатен преглед на персонализираната ти книга</span>[[sp:9]]<span>Безплатна доставка над 41 €</span>[[sp:9]]<span>Доставка от 2 до 4 работни дни</span>[[sp:9]]<span>Безплатен преглед на персонализираната ти книга</span>
+  </div></div>
+  <div class="dk-hero">
+    <div class="dk-stars">[[starfield:desk]]</div>
+    <header class="dk-hdr">
+      <a class="logo">[[mark:34]]<span>Astromia</span></a>
+      <nav class="dk-nav"><a>Книгата</a><a>Подарък</a><a>Отзиви</a><a>Метод</a><a>Блог</a><a>Въпроси</a></nav>
+      <div class="dk-right"><button class="btn">Виж книгата си безплатно</button><button class="lang">BG [[icon:chev-d:14]]</button></div>
+    </header>
+    <div class="dk-left">
+      <div class="rating">[[stars:14]]<span><b>4,6</b> от 5 · над 9000 оценки</span></div>
+      <h1 class="dk-h1">Намери <em>отговори</em><small>с твоята астрологична книга</small></h1>
+      <div class="free-pill">[[sp:13]]Безплатно: първите страници от твоята книга</div>
+      <p class="dk-p">Дата, час и град, и за 30 секунди разгръщаш своята книга: корицата с твоята карта, съдържанието, два откъса, написани за теб, и една страница от главата за Луната. Безплатно.</p>
+      <div class="dk-card">
+        <div class="q-row"><span class="q">Как се казваш?</span><span class="q-of">1 от 4</span></div>
+        <div class="dk-row"><div class="field focus">[[icon:pen:19]]<span>Елена<i class="caret"></i></span></div><button class="btn">Виж книгата си безплатно</button></div>
+        <div class="helper">[[sp:11]]Името ти ще е на корицата</div>
+        <div class="dk-meta"><div class="assure">[[icon:check:16]]Безплатно · без карта, без регистрация</div><div class="crowd"><div class="faces"><img src="[[asset]]photos/face-1.jpg" alt=""><img src="[[asset]]photos/face-2.jpg" alt=""><img src="[[asset]]photos/face-3.jpg" alt=""><img src="[[asset]]photos/face-4.jpg" alt=""></div>[[stars:12:1]]<span>4,6 · над 9000 души</span></div></div>
+      </div>
+    </div>
+    <div class="dk-visual">
+      <div class="dk-wheel">[[wheel:hero]]</div>
+      <div class="dk-book"><div class="b-glow"></div><div class="b-shadow"></div>
+        <div class="book" style="--w:300px;--h:405px;--d:14px"><div class="b-spine"></div><div class="b-top"></div><div class="b-pages"></div><div class="b-front">[[cover:board]]</div></div></div>
+      <div class="dk-note"><article class="qcard">[[stars:12]]<h4>Неща, които не бях казвала на глас</h4><p>„Четох я на един дъх. Главата за Луната казва неща, които не бях казвала на глас.“</p>
+        <div class="who"><span class="zav">[[z:cancer:17]]</span><div><b>Десислава</b><span>Рак · София · <em class="verified" style="font-style:normal">[[icon:check:12]]потвърдена поръчка</em></span></div></div></article></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

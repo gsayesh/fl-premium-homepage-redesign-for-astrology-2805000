@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="bg"><head><meta charset="utf-8">
+[[fonts]]
+<style>
+[[css]]
+[[phonecss]]
+html,body{margin:0;width:1600px;height:1200px;overflow:hidden}
+body{position:relative;background:
+  radial-gradient(40% 50% at 48% 47%,rgba(255,246,240,.95) 0%,rgba(255,246,240,0) 100%),
+  radial-gradient(50% 60% at 94% 6%,rgba(206,188,222,.95) 0%,rgba(206,188,222,0) 72%),
+  radial-gradient(55% 60% at 0% 100%,rgba(214,168,152,.75) 0%,rgba(214,168,152,0) 72%),
+  radial-gradient(120% 120% at 50% 50%,rgba(0,0,0,0) 55%,rgba(98,58,78,.16) 100%),
+  linear-gradient(160deg,#EEDFE3 0%,#ECD8D0 55%,#E2C8BF 100%)}
+.grain{position:absolute;inset:0;background-image:var(--grain);opacity:.9}
+.bigwheel{position:absolute;width:1320px;height:1320px;left:150px;top:-60px;opacity:.15}
+.bigwheel svg{width:100%;height:100%}
+.sky{position:absolute;inset:0}
+.orb{position:absolute;border-radius:50%;filter:blur(40px)}
+.p-hero{--s:1.235;left:556px;top:62px;z-index:4}
+.book-stage{position:absolute;left:1010px;top:470px;z-index:3;perspective:1500px}
+.book-stage .book{transform:rotateY(-33deg) rotateX(5deg) rotateZ(-1.5deg)}
+.book-stage .b-shadow{left:2%;right:-30%;bottom:-30px;height:56px;filter:blur(12px);background:radial-gradient(50% 50% at 50% 50%,rgba(42,23,48,.62),rgba(42,23,48,0))}
+.floor{position:absolute;left:900px;top:905px;width:600px;height:110px;border-radius:50%;background:radial-gradient(50% 50% at 50% 50%,rgba(42,23,48,.18),rgba(42,23,48,0));filter:blur(18px);z-index:1}
+.sp-a{position:absolute;color:#B5503A}
+.float-card{position:absolute;left:236px;top:676px;z-index:3;transform:rotate(-5deg) scale(1.08);transform-origin:right center;filter:drop-shadow(0 30px 40px rgba(42,23,48,.28))}
+.float-card .qcard{box-shadow:none}
+</style></head>
+<body>
+<div class="sky">[[starfield:board]]</div>
+<div class="bigwheel">[[wheel:board]]</div>
+<div class="orb" style="width:560px;height:560px;left:520px;top:300px;background:rgba(255,236,226,.9)"></div>
+<div class="orb" style="width:420px;height:420px;left:1080px;top:380px;background:rgba(236,205,192,.55)"></div>
+<div class="floor"></div>
+
+<div class="book-stage">
+  <div class="b-shadow"></div>
+  <div class="book" style="--w:336px;--h:454px;--d:18px">
+    <div class="b-spine"></div><div class="b-top"></div><div class="b-pages"></div>
+    <div class="b-front">[[cover:board]]</div>
+  </div>
+</div>
+
+<div class="float-card">
+  <article class="qcard" style="width:330px">[[stars:14]]<h4>Неща, които не бях казвала на глас</h4><p>„Четох я на един дъх. Главата за Луната казва неща, които не бях казвала на глас.“</p>
+    <div class="who"><span class="zav">[[z:cancer:18]]</span><div><b>Десислава</b><span>Рак · София · <em class="verified" style="font-style:normal">[[icon:check:12]]потвърдена поръчка</em></span></div></div></article>
+</div>
+<div class="phone p-hero">
+  <div class="scr">
+    <div class="island"></div>
+    <div class="sb"><span>9:41</span>[[sbicons]]</div>
+    <img class="shot" src="[[shot]]home-vp3.png" alt="">
+    <div class="homebar"></div>
+    <div class="glare"></div>
+  </div>
+</div>
+<span class="sp-a" style="left:1352px;top:470px">[[sp:30]]</span>
+<span class="sp-a" style="left:1300px;top:420px;opacity:.6">[[sp:14]]</span>
+<span class="sp-a" style="left:470px;top:250px;opacity:.75">[[sp:22]]</span>
+<div class="grain"></div>
+</body></html>
